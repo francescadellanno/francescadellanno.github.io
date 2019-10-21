@@ -18,8 +18,9 @@
   "bugs": {
     "url": "https://github.com/francescadellanno/francescadellanno.github.io/issues"
   },
-  "homepage": "https://github.com/francescadellanno/francescadellanno.github.io#readme",
+  "homepage": "https://francescadellanno.github.io",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
