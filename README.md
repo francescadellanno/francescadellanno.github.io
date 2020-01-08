@@ -6,10 +6,11 @@ Run `npm start`
 - Merge feature branches into develop
 - Check everything is working
 - Then merge into master
+- Do not push changes from master as will break pipeline when you pull remote master (dist folder)
+- Just run the cmd below
 
 # Deploy to production
-- Merge changes into master branch
-- Run `npm run deploy`
+- Run `npm run deploy` from master
 
 
 
