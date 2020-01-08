@@ -7,7 +7,7 @@
   margin-right: 20px;
 }
 
-.sidebar {
+.c-sidebar {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -18,7 +18,11 @@
   transition: 0.9s;
 }
 
-.sidebar a {
+.c-sidebar__lazy-loading {
+ text-decoration: underline; 
+}
+
+.c-sidebar a, li {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
@@ -28,6 +32,6 @@
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.c-sidebar a:hover {
   font-weight: bold;
 }

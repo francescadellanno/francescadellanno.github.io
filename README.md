@@ -2,6 +2,7 @@
 `npm start`
 
 # Process
+- Branch off of master
 - Merge feature branches into develop
 - Check everything is working
 - Then merge into master

@@ -9,14 +9,15 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <>  
-            <div className="sidebar" style={style}>
+            <div className="c-sidebar" style={style}>
                 <div className="c-sidebar__close">
                     <Close onClick={() => setMenuOpen(false)} />
                 </div>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <li>
+                    <span className="c-sidebar__lazy-loading">Lazy Loading</span>
+                    <ul><a href="#">Blur</a></ul>
+                </li>
+
             </div>
         </>
     )
