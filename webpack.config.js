@@ -20,9 +20,18 @@ module.exports = {
                     presets: ['@babel/preset-react']
                 }
             }
-        }, {
+        }, 
+        {
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        },
+        {
+            test: /\.s[ac]ss$/i,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader',
+            ]
         },
         {
             test: /\.(png|jpg|gif)$/,
@@ -37,9 +46,8 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             hash: true,
-            filename: "index.html",  //target html
-            template: "./src/index.html" //source html
-        }),
-        new MiniCssExtractPlugin({ filename: 'css/style.css' })
+            filename: "index.html",
+            template: "./src/index.html"
+        })
     ]
 }

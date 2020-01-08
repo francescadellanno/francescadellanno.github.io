@@ -1,0 +1,31 @@
+.img-loader__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #F6F6F6;
+    margin-top: 60px;
+}
+
+.img-loader__item {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+
+    &--hide {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
