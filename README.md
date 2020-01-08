@@ -1,5 +1,5 @@
 # Run locally
-`npm start`
+Run `npm start`
 
 # Process
 - Branch off of master
