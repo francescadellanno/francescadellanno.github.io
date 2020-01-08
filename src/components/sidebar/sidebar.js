@@ -14,7 +14,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
                     <Close onClick={() => setMenuOpen(false)} />
                 </div>
                 <li>
-                    <span className="c-sidebar__lazy-loading">Lazy Loading</span>
+                    <span className="c-sidebar__lazy-loading">LazyLoading</span>
                     <ul><a href="#">Blur</a></ul>
                 </li>
 
