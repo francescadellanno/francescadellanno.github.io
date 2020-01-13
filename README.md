@@ -2,7 +2,7 @@
 Run `npm start`
 
 # Process
-- Branch off of master
+- Branch off of develop
 - Merge feature branches into develop
 - Check everything is working
 - Then merge into master
@@ -12,5 +12,8 @@ Run `npm start`
 # Deploy to production
 - Run `npm run deploy` from master
 
+# Prettier
+- `cmd + shift + p`
+- Format document
 
 

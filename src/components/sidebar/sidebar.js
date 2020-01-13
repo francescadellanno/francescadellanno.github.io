@@ -1,6 +1,7 @@
 import React from 'react';
 import Close from '../close/close';
 import './styles/sidebar.scss';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ menuOpen, setMenuOpen }) => {
     const style = {
@@ -14,8 +15,11 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
                     <Close onClick={() => setMenuOpen(false)} />
                 </div>
                 <li>
-                    <span className="c-sidebar__lazy-loading">Lazy Loading</span>
-                    <ul><a href="#">Blur</a></ul>
+                    <div><Link to="/">Home</Link></div>
+                    <div>Lazy Loading</div>
+                    <ul>
+                        <Link to="/blur">Blur</Link>
+                    </ul>
                 </li>
 
             </div>
