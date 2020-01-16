@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../navbar/navbar';
-import ImageLoaderBlur from '../image-loader-blur/image-loader-blur';
+import ImageLoaderBlur from '../image-loader/image-loader';
 
 const Blur = () => {
     return (

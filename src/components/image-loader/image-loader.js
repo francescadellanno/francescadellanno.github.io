@@ -3,15 +3,9 @@ import LazyLoad from 'react-lazy-load';
 import classnames from 'classnames';
 import './styles/image-loader.scss';
 
-const ImageLoaderBlur = ({ imageId}) => {
+const ImageLoader = ({ imageId, pixelated = false }) => {
     
     const [imageLoaded, setImageLoaded] = useState(false);
-
-    const overlayStyles = {
-        filter: "blur(1px)",
-        transition: "opacity ease-in 1000ms",
-        clipPath: "inset(0)"
-    };
 
     return (
         <div className="img-loader__container">
@@ -19,7 +13,7 @@ const ImageLoaderBlur = ({ imageId}) => {
                 debounce={false}
                 offsetVertical={100}
             >
-                <div className={classnames("img-loader__item", { "img-loader__item--hide": imageLoaded })}>
+                <div className={classnames("img-loader__item", { "img-loader__item--hide": imageLoaded }, { "img-loader__item--pixel": pixelated })}>
                     <img 
                         src={`https://source.unsplash.com/${imageId}/16x9`}
                         alt="corgi-1"
@@ -37,7 +31,6 @@ const ImageLoaderBlur = ({ imageId}) => {
                         onLoad={() => {
                             setImageLoaded(true)
                         }}
-                        style={overlayStyles}
                     />
                 </div>
             </LazyLoad>
@@ -45,4 +38,4 @@ const ImageLoaderBlur = ({ imageId}) => {
     )
 } 
 
-export default ImageLoaderBlur;
+export default ImageLoader;

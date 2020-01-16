@@ -18,7 +18,12 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
                     <div><Link to="/">Home</Link></div>
                     <div>Lazy Loading</div>
                     <ul>
-                        <Link to="/blur">Blur</Link>
+                        <div>
+                            <Link to="/blur">Blur</Link>
+                        </div>
+                        <div>
+                            <Link to="/pixelated">Pixelated</Link>
+                        </div>
                     </ul>
                 </li>
 
