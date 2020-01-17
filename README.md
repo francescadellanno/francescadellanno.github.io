@@ -16,4 +16,7 @@ Run `npm start`
 - `cmd + shift + p`
 - Format document
 
-
+# Docker
+- `docker build . -t <container-name>`
+- `docker run -p 8000:80 <container-name>`
+- Go to `localhost:8000`
